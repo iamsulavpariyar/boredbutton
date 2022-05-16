@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-254627-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-254627-3", { anonymize_ip: true });
+    </script>
+    <title>
+      Discover What Others Achieved at Your Exact Age - Bored Button
+    </title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/media/boredbutton180.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/media/boredbuttonfav.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/media/boredbutton16.png">
+
+    <link href="/media/css/main.css" rel="stylesheet" />
+    <script>
+      var width = screen.width;
+      if (width > 1179) {
+      } else {
+        document.cookie = "buySellAds=true; path=/; max-age=0;";
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if lt IE 9]>
+      <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+	
+    <div class="container">
+		<div id="button">
+			<a href="/"><img src="/media/boredbutton.png" alt="Bored Button" height="150" width="150"></a>
+		</div>
+      <h1 >Bored Button</h1>
+	    <h2>choose game you want to play</h2>
+      <div class="card">
+        {% for games in allgames %}
+        <div class="sudee">
+          <a href="{{games.siteurl}}" target="_blank">
+            <img
+              src="/media/{{games.image}}"
+              class="img-resposive"
+              height="110"
+              width="120" /></a>
+          <a href="{{games.siteurl}}" target="_blank"> {{games.title}} </a>
+        </div>
+        {% endfor %}
+      </div>  
+    </div>
+  </body>
+  
+  <footer style="bottom: 0">
+    <div class="container text-center ">
+	
+	
+	<p class="footer"><a href="/contact" rel="nofollow">Add a Website</a> | <a href="/terms" rel="nofollow">Terms</a> | <a href="/privacy" rel="nofollow">Privacy</a><br/>&copy; 2006-2022 Bored Button LLC</p>
+
+    </div>
+  </footer>
+</html>

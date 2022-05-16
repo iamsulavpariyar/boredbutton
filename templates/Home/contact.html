@@ -1,0 +1,136 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head profile="http://gmpg.org/xfn/11">
+<title>Add a Website to Bored Button</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="robots" content="all" />
+<meta name="description" content="Know of a website to cure boredom? Add a site to Bored Button! " />
+<meta name="keywords" content="bored, boring, bore, I am bored, I'm so bored, I'm bored at work, I'm bored at school, I'm bored to tears, I'm bored to death" />
+<meta name="author" content="Tyler Cole" />
+<meta name="Copyright" content="Copyright (c) 2006-2017 Tyler Cole" />
+<meta name="google-site-verification" content="RBI4rL3rAGPV4z8ITWaDp9egGcXqcgJbD1tOsJOHT38" />
+<style type="text/css" media="all">
+body {
+	background: #fff;
+	color: #000;
+	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 24px 0;
+	padding: 0;
+}
+#button {
+	text-align: center;
+	margin: 0 8px 4px 0;
+	padding: 0;
+}
+img {
+	height: 150px;
+	width: 150px;
+	-webkit-filter: drop-shadow(0px 6px 2px #ccc);
+	filter: drop-shadow(0px 6px 2px #ccc);
+}
+#wrapper {
+	width: 300px;
+	margin: 0 auto;
+}
+h1 {
+	font-size: 50px;
+	letter-spacing: -1px;
+	margin: 0 0 0 -1px;
+	padding: 0;
+}
+.tm {
+	font-size: 12px;
+}
+input[type=text] {
+	width: 285px;
+	margin: 0;
+	padding: 8px 6px;
+	font-size: 14px;
+	border: 1px solid #666;
+}
+.glow {
+	background-color: #ddd;
+	padding: 2px;
+	margin: 0 -2px 12px -2px;
+}
+input[type=submit] {
+	width: 120px;
+	margin: 0 0 24px 89px;
+	padding: 8px 6px;
+	font-size: 14px;
+	background-color: #eee;
+	font-weight: bold;
+	border: 1px solid #666;
+	cursor: pointer;
+}
+.footer {
+	display: block;
+	margin: 0;
+	text-align: center;
+}
+a, ul {
+	color: #c00;
+}
+ul {
+	margin: -4px 0 12px;
+}
+.none {
+	display: none;
+}
+@media only screen and (max-width: 320px) {
+	body {
+		margin: 20px;
+	}
+	#wrapper {
+		width: 280px;
+	}
+	img {
+		height: 140px;
+		width: 140px;
+	}
+	h1 {
+		font-size: 46px;
+	}
+	p, ul {
+		font-size: 16px;
+		line-height: 19px;
+		margin-bottom: 20px;
+	}
+	input[type=text] {
+		width: 265px;
+	}
+	.glow {
+		margin-bottom: 20px;
+	}
+	input[type=submit] {
+		margin-left: 79px;
+		margin-bottom: 40px;
+	}
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="button">
+	<a href="/"><img src="/media/boredbutton.png" alt="Bored Button" height="150" width="150"></a>
+</div>
+<div id="wrapper">
+	<h1>Know a Site?</h1>
+				<p>Do you know an interactive website that will help cure boredom? Add it to Bored Button<span class="tm">™</span>.</p>
+	<p>Tell us about it! All fields required.</p>
+		<form method="post" action="contact">
+        {% csrf_token %}
+		<div class="glow"><input type="text" name="link" value="" placeholder="Site URL, e.g. www.crazycardtrick.com" /></div>
+		<div class="glow"><input type="text" name="comments" value="" placeholder="Short Description" /></div>
+		<div class="glow"><input type="text" name="email" value="" placeholder="Your Email Address" /></div>
+		<div class="glow none"><input type="text" name="username" value="" placeholder="User Name" /></div>
+		<input type="submit" name="submit" value="Submit" />	
+	</form>
+		<p class="footer"><a href="/">Home</a> | <a href="/terms" rel="nofollow">Terms</a> | <a href="/privacy" rel="nofollow">Privacy</a><br/>&copy; 2006-2022 Bored Button LLC</p>
+</body>
+</html>
